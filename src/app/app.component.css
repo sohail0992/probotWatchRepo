@@ -1,0 +1,92 @@
+
+.mat-button._mat-nav-button
+{
+  text-transform: none;
+}
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.qg-btn-ghost {
+  border: 1px solid #4ba3c7;
+  color: #4ba3c7;
+  padding: 0 26px;
+}
+
+.qg-btn {
+  border: 1px solid #4ba3c7;
+  color: #FFFFFF;
+  background-color: #4ba3c7;
+  padding: 0 26px;
+}
+
+.mat-icon-button.qg-btn-text {
+  font-size: 1.6em;
+  padding-top: 6px;
+}
+
+.qg-btn-text {
+  font-weight: bold;
+  border: 1px solid rgba(0,0,0,0);
+  color: #4ba3c7;
+  padding: 0 26px;
+}
+
+mat-progress-circular.mat-default-theme path, mat-progress-circular path {
+  stroke:rgb(255,255,255);
+}
+
+.loading-box {
+  display: inline;
+  margin-left: 5px !important;
+}
+
+.loading-box-layout {
+  font-family: 'Roboto', sans-serif;
+  display: inline;
+  height: 8px;
+  color: white; 
+}
+
+.loading-box-container {
+  position: absolute;
+  bottom: 5vh;
+  left: 20px;
+  width: 80px;
+  height: 20px;
+  padding: 10px 25px 10px 15px;
+  background-color: rgba(39,35,91,.7);
+  border-radius: 5px;
+  z-index: 1;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+
+/* slide in from the bottom */
+
+@keyframes slideOutLeft {
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+
+/* Responsive: Portrait tablets and up */
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+

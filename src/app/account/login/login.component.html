@@ -1,0 +1,30 @@
+<div class="limiter">
+  <div class="container-login100" style="background-image: url('images/bg-01.jpg');">
+    <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
+      <form class="login100-form" novalidate (ngSubmit)="login()" #loginForm="ngForm" ng-if="isTrue">
+        <div role="alert">
+          <span class="login100-form-title p-b-49">Login</span>
+          <!-- {{user.name}} -->
+          <mat-form-field class="wrap-input100 validate-input m-b-23">
+            <input matInput class="" type="text" [(ngModel)]="userData.username" name="username" placeholder="Username" required/>
+            <!-- <span class="focus-input100" data-symbol="&#xf206;"></span> -->
+          </mat-form-field>
+          <mat-form-field class="wrap-input100 validate-input">
+            <input matInput class="" type="password" placeholder="Password" [(ngModel)]="userData.password" name="password" required/>
+            <!-- <span class="focus-input100" data-symbol="&#xf190;"></span> -->
+          </mat-form-field>
+          <div class="text-right p-t-8 p-b-31">
+            <a href="#">Forgot password?</a>
+          </div>
+          <div class="container-login100-form-btn">
+            <div class="wrap-login100-form-btn">
+              <div class="login100-form-bgbtn"></div>
+              <button mat-raised-button class="login100-form-btn" [disabled]="!loginForm.form.valid">Login</button>  
+            </div>
+            <p class="error" style="color: red;">{{error}}</p>
+          </div>
+        </div>
+      </form>
+      </div>
+    </div>
+  </div>

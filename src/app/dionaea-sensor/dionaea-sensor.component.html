@@ -1,0 +1,101 @@
+<app-navbar></app-navbar> 
+<mat-tab-group >
+  <mat-tab label="Virus Totals">Content 2</mat-tab>
+  <mat-tab label="Virus Total Scans">Content 2</mat-tab> 
+  <mat-tab label="Connections">
+  <div class="mat-container mat-elevation-z8">
+  <mat-table #table [dataSource]="dataSource">
+    <ng-container matColumnDef="connection">
+      <mat-header-cell *matHeaderCellDef> connection </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.connection}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="Type">
+      <mat-header-cell *matHeaderCellDef> Type </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.connection_type}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="Transport">
+      <mat-header-cell *matHeaderCellDef> Transport </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.connection_transport}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="Protocal">
+      <mat-header-cell *matHeaderCellDef> Protocal </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.connection_protocol}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="TimeStamp" mat-sort-heade>
+      <mat-header-cell *matHeaderCellDef> TimeStamp </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.connection_timeStamp}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="Root">
+      <mat-header-cell *matHeaderCellDef> Root </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.connection_root}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="Parent">
+      <mat-header-cell *matHeaderCellDef>Parent</mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.connection_parent}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="localHost">
+      <mat-header-cell *matHeaderCellDef> Local Host </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.local_host}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="localPort">
+      <mat-header-cell *matHeaderCellDef>Local Port</mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.local_port}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="RemoteHost">
+      <mat-header-cell *matHeaderCellDef>Remote Host</mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.remote_host}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="RemoteHostname">
+      <mat-header-cell *matHeaderCellDef>Remote HostName</mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.remote_hostname}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="RemotePort">
+      <mat-header-cell *matHeaderCellDef>Remote Port </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.remote_port}} </mat-cell>
+    </ng-container>
+    
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+  </div>
+  </mat-tab>
+  <mat-tab label="DcerpcBinds">Dcerpcbinds</mat-tab>
+  <mat-tab label="DcerpcRequests">Content 2</mat-tab>`
+  <mat-tab label="DcerpcServiceops">Content 2</mat-tab>
+  <mat-tab label="DcerpcServices">Content 2</mat-tab>
+  <mat-tab label="Downloads">Content 2</mat-tab>
+  <mat-tab label="Emu Profiles">Content 2</mat-tab>
+  <mat-tab label="Emu Service">Content 2</mat-tab>
+  <mat-tab label="Emu Old Services">Content 2</mat-tab>
+  <mat-tab label="Logins">Content 2</mat-tab>
+  <mat-tab label="Mqtt Fingerprints">Content 2</mat-tab>
+  <mat-tab label="Mqtt Publish Commands">Content 2</mat-tab>
+  <mat-tab label="Mqtt Subscribe Commands">Content 2</mat-tab>
+  <mat-tab label="Mssql Commands">Content 2</mat-tab>
+  <mat-tab label="Mssql Fingerprints">Content 2</mat-tab>
+  <mat-tab label="Mssql Commands Args">Content 2</mat-tab>
+  <mat-tab label="Mssql Commands ops">Content 2</mat-tab>
+  <mat-tab label="mysql Commands">Content 2</mat-tab>
+  <mat-tab label="Offers">Content 2</mat-tab>
+  <mat-tab label="Pofs">Content 2</mat-tab>
+  <mat-tab label="Resolves">Content 2</mat-tab>
+  <mat-tab label="Sip Address">Content 2</mat-tab>
+  <mat-tab label="Sip Commands">Content 2</mat-tab>
+  <mat-tab label="Sip sdpConnection Data">Content 2</mat-tab>
+  <mat-tab label="Sip sdp Medias">Content 2</mat-tab>
+  <mat-tab label="Sip sdp Origins">Content 2</mat-tab>
+  <mat-tab label="Sip vias">Content 2</mat-tab>
+</mat-tab-group>
+
+
